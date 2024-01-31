@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { StyleSheet, Text, View, Image, FlatList } from 'react-native';
 import * as Location from 'expo-location';
 // test github 
+//test 2222
 export default function App() {
   const [location, setLocation] = useState(null);
   const [errorMsg, setErrorMsg] = useState(null);
