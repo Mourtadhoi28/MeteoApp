@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React, { useEffect, useState } from 'react';
 import { StyleSheet, Text, View, Image, FlatList } from 'react-native';
 import * as Location from 'expo-location';
-
+// test github 
 export default function App() {
   const [location, setLocation] = useState(null);
   const [errorMsg, setErrorMsg] = useState(null);
@@ -92,6 +92,7 @@ export default function App() {
           showsHorizontalScrollIndicator={false}
         />
       )}
+    
       <StatusBar style="auto" />
     </View>
   );
