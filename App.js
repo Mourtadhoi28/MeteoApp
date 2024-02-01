@@ -2,8 +2,8 @@ import { StatusBar } from 'expo-status-bar';
 import React, { useEffect, useState } from 'react';
 import { StyleSheet, Text, View, Image, FlatList } from 'react-native';
 import * as Location from 'expo-location';
-// test github 
-//test 2222
+
+
 export default function App() {
   const [location, setLocation] = useState(null);
   const [errorMsg, setErrorMsg] = useState(null);
@@ -82,6 +82,7 @@ export default function App() {
       )}
       <Text style={styles.paragraph}>{Math.round(data.main && data.main.temp)} °C</Text>
       <Text style={styles.header}>Prévision des 5 prochains jours</Text>
+      <Text style={styles.header}>Fake it until you make it</Text>
       {isLoading ? (
         <Text>Loading...</Text>
       ) : (
@@ -129,10 +130,7 @@ const styles = StyleSheet.create({
   },
   icon: {
     width: 55,
-    height: 55,
-    
+    height: 55, 
   },
-  FlatList: {
-    border: 'solid 2px',
-  }, 
+
 });
